@@ -169,7 +169,7 @@ void* listen_net(void *arg)
 						fprintf(logfd,"分配玩家位置出錯\n");
 						fprintf(stderr,"分配玩家位置出錯b\n");
 					}
-					if(clients[j]<=0)
+					if(clients[j]<=0) // -1代表這個位置可以使用
 					{
 						clients[j]=csd;
 						break;
